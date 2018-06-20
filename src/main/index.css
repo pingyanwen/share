@@ -1,0 +1,21 @@
+.main{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right:0;
+    top:0;
+    left:0;
+    bottom:0;
+}
+.top_menu{
+    /*position: absolute;*/
+}
+.left_menu{
+    position: absolute;
+    top:45px;
+    bottom:0;
+    width:240px;
+    overflow: hidden;
+    overflow-y: auto;
+    border-right: 1px solid #e8e8e8;
+}
