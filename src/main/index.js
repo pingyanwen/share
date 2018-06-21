@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import Menu from 'uiw/lib/menu';
 import Icon from 'uiw/lib/icon';
-// import sty from  './index.css';
-import './index.css';
+import styles from  './index.css';
 const headerMenu=[
     {label:"首页",path:"home"},
     {label:"高德地图",path:"map"},
     {label:"日历控件",path:"calender"},
     {label:"轮播",path:"carousel"},
     {label:"echart图",path:"echart"},
+    {label:"htmlcssjs",path:"htmlcssjs"},
     {label:"贡献者（可以自己扩展）",path:"contributer"}];
 const leftMenu={
     '0':[{label:"pingyanwen",path:"home/pingyanwen"},{label:"hanchanghong",path:"home/hanchanghong"}],
@@ -16,7 +16,8 @@ const leftMenu={
     '2':[{label:"home3"},{label:"home3"}],
     '3':[{label:"home4"},{label:"home4"}],
     '4':[{label:"home5"},{label:"home5"}],
-    '5':[{label:"home6"},{label:"home6"}]
+    '5':[{label:"三角形",path:"htmlcssjs/triangle"}],
+    '6':[{label:"home6"},{label:"home6"}]
 };
 export  default class Main extends React.Component {
     constructor(props){
@@ -31,13 +32,13 @@ export  default class Main extends React.Component {
     }
     render() {
         return (
-            <div className="main">
-                <div className="top_menu">
+            <div className={styles["main"]}>
+                <div className={styles["top_menu"]}>
                     <Menu defaultActive="0" theme="dark" mode="horizontal" onSelect={this.onSelectHeader}>
                         {this.getHeaderMenu()}
                     </Menu>
                 </div>
-                <div className="left_menu">
+                <div className={styles["left_menu"]}>
                     <Menu
                         defaultActive="0"
                         mode={this.state.mode?'vertical':'inline'}

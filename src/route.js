@@ -4,6 +4,7 @@ import {homeRoute} from './home/route';
 import {calenderRoute} from './calender/route';
 import {carouselRoute} from './carousel/route';
 import {echartRoute} from './echart/route';
+import {htmlcssjsRoute} from './htmlcssjs/route';
 import {contributerRoute} from './contributer/route';
 let childRoutes = [
     mapRoute,
@@ -11,6 +12,7 @@ let childRoutes = [
     calenderRoute,
     carouselRoute,
     echartRoute,
+    htmlcssjsRoute,
     contributerRoute
 ];
 

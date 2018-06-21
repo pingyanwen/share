@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-// import sty from  './index.css'
-import './index.css'
+import styles from  './index.css'
+//import './index.css'
 export  default class Map extends React.Component {
     constructor(props){
         super(props);
@@ -11,7 +11,7 @@ export  default class Map extends React.Component {
     }
     render() {
         return (
-            <div className="main_map">
+            <div className={styles["main_map"]}>
                 日历内容
             </div>
         )

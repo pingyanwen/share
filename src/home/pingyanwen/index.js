@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-// import sty from  './index.css'
-import './index.css'
-export  default class Map extends React.Component {
+import styles from  './index.css'
+export  default class Pingyanwen extends React.Component {
     constructor(props){
         super(props);
         this.state={
@@ -11,8 +10,8 @@ export  default class Map extends React.Component {
     }
     render() {
         return (
-            <div className="main_map">
-                pingyanwen内容
+            <div className={styles["main_content"]}>
+                pyw
             </div>
         )
     }

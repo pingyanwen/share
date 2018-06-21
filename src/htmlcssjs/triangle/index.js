@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import styles from  './index.css'
-export  default class Map extends React.Component {
+import styles from  './index.css';
+//import './index.css'
+export  default class Pingyanwen extends React.Component {
     constructor(props){
         super(props);
         this.state={
@@ -10,8 +11,8 @@ export  default class Map extends React.Component {
     }
     render() {
         return (
-            <div className={styles["main_map"]}>
-                echart内容
+            <div className={styles["main_content"]}>
+                <div className={styles["box"]}>提示框</div>
             </div>
         )
     }
