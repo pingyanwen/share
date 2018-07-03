@@ -16,7 +16,11 @@ const leftMenu={
     '2':[{label:"home3"},{label:"home3"}],
     '3':[{label:"home4"},{label:"home4"}],
     '4':[{label:"home5"},{label:"home5"}],
-    '5':[{label:"三角形",path:"htmlcssjs/triangle"}],
+    '5':[
+            {label:"三角形",path:"htmlcssjs/triangle"},
+            {label:"代码展示",path:"htmlcssjs/codeshow"},
+            {label:"markDown编辑器",path:"htmlcssjs/markdown"}
+        ],
     '6':[{label:"home6"},{label:"home6"}]
 };
 export  default class Main extends React.Component {
@@ -29,6 +33,18 @@ export  default class Main extends React.Component {
         }
         this.onSelectHeader=this.onSelectHeader.bind(this);
         this.onSelectLeft=this.onSelectLeft.bind(this);
+    }
+    componentDidMount(){
+        this.dynamicCssLoad("../../node_modules/simplemde/dist/simplemde.min.css");
+        this.dynamicCssLoad("../../node_modules/highlight.js/styles/atom-one-dark.css");
+    }
+    dynamicCssLoad(url){
+        let head = document.getElementsByTagName('head')[0];
+        let link = document.createElement('link');
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        link.href = url;
+        head.appendChild(link);
     }
     render() {
         return (

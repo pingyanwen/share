@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styles from  './index.css';
+import htjs from 'highlight.js';
 export  default class Pingyanwen extends React.Component {
     constructor(props){
         super(props);
@@ -11,9 +12,19 @@ export  default class Pingyanwen extends React.Component {
     render() {
         return (
             <div className={styles["main_content"]}>
-                <div className={styles["box"]}>提示框</div>
+                <pre>
+                    <code className="javascript">
+                          function $initHighlight(block, cls){
+                            }
+                    </code>
+                </pre>
             </div>
         )
     }
-
+    componentDidMount(){
+        this.init();
+    }
+    init(){
+        htjs.initHighlightingOnLoad();
+    }
 }

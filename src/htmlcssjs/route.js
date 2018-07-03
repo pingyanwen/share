@@ -10,5 +10,21 @@ export const htmlcssjsRoute = {
                 })
             }
         },
+        {
+            path:'/htmlcssjs/codeshow',
+            getComponents(location, callback) {
+                require.ensure([], function (require) {
+                    callback(null, require('./codeshow').default)
+                })
+            }
+        },
+        {
+            path:'/htmlcssjs/markdown',
+            getComponents(location, callback) {
+                require.ensure([], function (require) {
+                    callback(null, require('./markdown').default)
+                })
+            }
+        },
     ]
 }

@@ -1,0 +1,9 @@
+.main_content{
+    position: absolute;
+    top:45px;
+    left:240px;
+    bottom:0;
+    right:0;
+    padding: 10px;
+    font-size: 14px;
+}

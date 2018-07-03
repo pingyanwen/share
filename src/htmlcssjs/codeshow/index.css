@@ -1,0 +1,24 @@
+.main_content{
+    position: absolute;
+    top:45px;
+    left:240px;
+    bottom:0;
+    right:0;
+    padding: 10px;
+    font-size: 14px;
+}
+.code_pre{
+    background-color: #282828;
+    color: #839496;
+    border: 1px solid #1e1e1e;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 13px;
+    word-wrap: normal;
+    white-space: pre;
+    overflow: auto;
+    border-radius: 4px;
+}
+.code_code{
+    white-space: pre;
+}
