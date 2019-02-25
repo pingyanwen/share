@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import styles from  './index.css'
+import styles from './index.css'
 export  default class Map extends React.Component {
     constructor(props){
         super(props);

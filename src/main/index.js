@@ -14,7 +14,9 @@ const leftMenu={
     '0':[{label:"pingyanwen",path:"home/pingyanwen"},{label:"hanchanghong",path:"home/hanchanghong"}],
     '1':[{label:"home2"},{label:"home2"}],
     '2':[{label:"home3"},{label:"home3"}],
-    '3':[{label:"home4"},{label:"home4"}],
+    '3':[
+            {label:"轮播",path:"carousel/carousel"},
+        ],
     '4':[{label:"home5"},{label:"home5"}],
     '5':[
             {label:"三角形",path:"htmlcssjs/triangle"},

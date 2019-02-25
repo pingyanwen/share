@@ -8,6 +8,7 @@ export  default class MarkDown extends React.Component {
     constructor(props){
         super(props);
         this.state={
+            html:"<p>myhome</p>"
         }
     }
     render() {
@@ -17,17 +18,20 @@ export  default class MarkDown extends React.Component {
                 <div onClick={e=>this.save()}>
                     保存
                 </div>
-                <div id="html">
+                <div id="html" dangerouslySetInnerHTML={this.html()}>
                 </div>
             </div>
         )
     }
+    html(){
+        return {__html:this.state.html}
+    }
     save(){
         let value = this.state.smde.value();
         let html = this.state.smde.markdown(value);
-        let save = document.getElementById("html");
-        save.innerHTML=html;
-
+        // let save = document.getElementById("html");
+        // save.innerHTML=html;
+        this.setState({html});
     }
     componentDidMount() {
         let smde = new SimpleMDE({
